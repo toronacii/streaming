@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+#container {
+    background-image: url("../images/skyblue-wallpaper.jpg");
+    width: 100vw;
+    height: 100vh;
+}
+
+#header {
+    height: 10vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);;
+}
+
+#content {
+    height: 80vh;
+    width: 100vw;
+}
+
+#footer {
+    height: 10vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+}
