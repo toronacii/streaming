@@ -5,18 +5,22 @@
 
   <title>Streaming</title>
 
-  <link rel="stylesheet" href="index.css" />
-
+  <link rel="stylesheet" href="/index.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
   <div id="container">
     <div id="header">
-      <span id="title">Streaming</span>
-      <button id="relay">Test</button>
+      <span id="title">Villa Pueyrredon Streaming</span>
+      <button id="create" class="relay show">Transmitir</button>
+      <button id="join" class="relay">Unirse</button>
+      <button id="leave" class="relay leave">Abandonar</button>
     </div>
-    <div id="content">   
-      <video id="remoteVideo" autoplay playsinline></video>
+    <div id="content">
+      <div id="no-signal">
+        <div>No hay transmisiones activas</div>
+      </div>
     </div>
     <div id="footer"></div>
   </div>

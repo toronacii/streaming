@@ -2,7 +2,8 @@ body, html {
     margin: 0;
     height: 100%;
     width: 100%;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(72, 129, 142);
 }
 #container {
     background-image: url("../images/skyblue-wallpaper.jpg");
@@ -20,13 +21,48 @@ body, html {
 
 #title{
     position: absolute;
-    margin: 1%;
+    margin: 1% 1%;
 }
 
-#relay{
+.relay{
     right: 0;
     position: absolute;
     margin: 2%;
+    width: 10%;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(72, 129, 142);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    border: none;
+    display: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.relay:hover {
+    background-color: rgb(130, 166, 174);
+}
+
+.leave {
+    background-color: #bd1212;
+}
+.leave:hover {
+    background: red;
+}
+
+.show {
+    display: inline-block;
+}
+
+#no-signal {
+    background-image: url("../images/no-signal.gif");
+    width: 100%;
+    height: 100%;
+}
+
+#no-signal div {
+    margin: 0 auto;
 }
 
 #content {
