@@ -6,7 +6,12 @@ const express = require('express');
 const app = express();
 
 app.use(express.static('public'));
-//app.use(express.static('node_modules/socket.io'));
+app.set('views', 'public');
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'html');
+
+app.get('/', (req, res) => res.render('client/index.html'));
+app.get('/admin', (req, res) => res.render('admin/index.html'));
 
 // ===========================================================
 const httpServer = http.createServer(app);
