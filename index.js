@@ -10,8 +10,9 @@ app.set('views', 'public');
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
-app.get('/', (req, res) => res.render('client/index.html'));
-app.get('/admin', (req, res) => res.render('admin/index.html'));
+// app.get('/', (req, res) => res.render('index.html'));
+
+app.get('/admin', (req, res) => res.render('index.html'));
 
 // ===========================================================
 const httpServer = http.createServer(app);
