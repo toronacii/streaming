@@ -11,24 +11,31 @@ body, html {
     height: 100%;
 }
 
+.flex {
+    display: flex;
+}
+
+.center {
+    align-self: center;
+}
+
 #header {
-    height: 10%;
+    height: 80px;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.5);
     position: relative;
     font-size: 40px;
 }
 
-#title{
-    position: absolute;
-    margin: 1% 1%;
+#title {
+    margin: 0px 10px;
 }
 
 .relay{
     right: 0;
     position: absolute;
-    margin: 2%;
-    width: 10%;
+    margin: 0px 10px;
+    margin: 0px 15px;
     font-size: 25px;
     font-family: 'Roboto', sans-serif;
     background-color: rgb(72, 129, 142);
@@ -57,12 +64,16 @@ body, html {
 
 #no-signal {
     background-image: url("../images/no-signal.gif");
-    width: 100%;
+    text-align: center;
+    width: 90%;
     height: 100%;
+    margin: 0 auto;
 }
 
 #no-signal div {
     margin: 0 auto;
+    font-size: 50px;
+    color: black;
 }
 
 #content {
