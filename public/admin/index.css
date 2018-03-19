@@ -1,25 +1,41 @@
-body {
+body, html {
     margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
 }
 #container {
     background-image: url("../images/skyblue-wallpaper.jpg");
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 #header {
-    height: 10vh;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.5);;
+    height: 10%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    font-size: 40px;
+}
+
+#title{
+    position: absolute;
+    margin: 1%;
+}
+
+#relay{
+    right: 0;
+    position: absolute;
+    margin: 2%;
 }
 
 #content {
-    height: 80vh;
-    width: 100vw;
+    height: 85%;
+    width: 100%;
 }
 
 #footer {
-    height: 10vh;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.5);
+    height: 5%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
 }
